@@ -3,6 +3,10 @@
 Trix.registerElement "trix-toolbar",
   defaultCSS: """
     %t {
+      display: block;
+    }
+
+    %t {
       white-space: nowrap;
     }
 
@@ -23,6 +27,6 @@ Trix.registerElement "trix-toolbar",
     }
   """
 
-  createdCallback: ->
+  connectedCallback: ->
     if @innerHTML is ""
       @appendChild(cloneFragment(Trix.config.toolbar.content))
