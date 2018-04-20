@@ -1,5 +1,6 @@
 Trix.config.lang =
   bold: "Bold"
+  tag: "Tag"
   bullets: "Bullets"
   byte:  "Byte"
   bytes: "Bytes"
